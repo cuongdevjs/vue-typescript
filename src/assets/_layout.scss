@@ -1,0 +1,78 @@
+.main-app {
+  max-width: 100%;
+  height: 100vh;
+
+  .pSideBar {
+    max-width: 280px;
+    height: 100vh;
+    transition: 0.35s;
+  }
+
+  .pSideBar.has-minWidth {
+    min-width: 240px;
+  }
+
+  .pRight {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+
+    .pHeader {
+      box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+      padding: 7px 24px;
+
+      .pHamburger {
+        font-size: $fontSizeLarge;
+        transition: 0.55s;
+      }
+
+      .pHamburger.off {
+        transform: rotate(0);
+      }
+      .pHamburger.on {
+        transform: rotate(-90deg);
+      }
+
+      .avt {
+        border: 1px solid $colorBlue;
+        border-radius: 50%;
+        @include size(35px, 35px);
+      }
+
+      .inf {
+        .role {
+          font-size: 12px;
+          opacity: 0.75;
+        }
+      }
+    }
+
+    .main-display {
+      max-height: calc(100vh - 49px);
+      max-width: 100%;
+      @include size(100%, 100%);
+    }
+  }
+}
+
+.el-menu {
+  background-color: #304156;
+  max-height: 100vh;
+  height: 100%;
+  .el-submenu__title {
+    color: $colorSilver;
+    &:hover {
+      background-color: #263445;
+    }
+  }
+  .el-menu-item-group__title {
+    color: $colorSilver;
+  }
+  .el-menu-item {
+    color: $colorSilver;
+    &:hover,
+    &:focus {
+      background-color: #263445;
+    }
+  }
+}

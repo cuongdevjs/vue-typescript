@@ -15,7 +15,10 @@ $colorBlack: #000;
 $colorWhite: #fff;
 $transitionEase: all 0.5s cubic-bezier(0.04, 1, 0.6, 0.97);
 $transitionRegular: all 0.15s ease-out;
+$fontSizeSmall: 11px;
 $fontSizeMedium: 14px;
+$fontSizeLarge: 20px;
+$fontSizeHeader: 25px;
 
 * {
   box-sizing: border-box;
@@ -33,6 +36,14 @@ html {
 
 .style-fullWidth {
   width: 100%;
+}
+
+.width__100 {
+  width: 100% !important;
+}
+
+.height__100 {
+  height: 100% !important;
 }
 
 .flex-row {
@@ -95,6 +106,18 @@ html {
   &-top__0 {
     padding-top: 0 !important;
   }
+  &-left__10 {
+    padding-left: 10px !important;
+  }
+  &-right__10 {
+    padding-right: 10px !important;
+  }
+  &-bottom__10 {
+    padding-bottom: 10px !important;
+  }
+  &-top__10 {
+    padding-top: 10px !important;
+  }
 }
 
 .margin {
@@ -112,5 +135,26 @@ html {
   }
   &-top__0 {
     margin-top: 0 !important;
+  }
+  &-left__10 {
+    margin-left: 10px !important;
+  }
+  &-right__10 {
+    margin-right: 10px !important;
+  }
+  &-bottom__10 {
+    margin-bottom: 10px !important;
+  }
+  &-top__10 {
+    margin-top: 10px !important;
+  }
+}
+
+.mouse {
+  &-clickable {
+    cursor: pointer;
+  }
+  &-notClick {
+    cursor: not-allowed;
   }
 }

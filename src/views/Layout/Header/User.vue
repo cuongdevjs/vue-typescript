@@ -1,7 +1,13 @@
 <template>
   <el-popover placement="bottom" trigger="click" :popper-class="classCustom">
-    <div class="flex-row flex-row__right" slot="reference">
-      <div class="avt flex-row flex-row__center">
+    <div class="flex-row flex-row__right mouse-clickable">
+      <div class="inf">
+        <div class="name">{{ name }}</div>
+        <div class="role">{{ role }}</div>
+      </div>
+    </div>
+    <div class="flex-row flex-row__right mouse-clickable" slot="reference">
+      <div class="avt flex-row flex-row__center margin-right__10">
         C
       </div>
       <div class="inf">
@@ -22,4 +28,4 @@ export default class User extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

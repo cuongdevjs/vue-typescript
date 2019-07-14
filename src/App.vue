@@ -1,9 +1,11 @@
 <template>
-  <div class="main-app">
+  <div class="main-app flex-row flex-row__between">
     <SideBar></SideBar>
     <div class="pRight">
       <Header />
-      <router-view />
+      <div class="main-display">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>

@@ -1,5 +1,9 @@
 <template>
-  <el-menu default-active="2" class="el-menu-vertical-demo">
+  <el-menu
+    default-active="2"
+    class="el-menu-vertical-demo"
+    :collapse="isCollapse"
+  >
     <el-submenu index="1">
       <template slot="title">
         <i class="el-icon-location"></i>
@@ -28,9 +32,14 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { generalInfo } from "@/store/modules/general";
 
 @Component
-export default class MenuItem extends Vue {}
+export default class MenuItem extends Vue {
+  get isCollapse() {
+    return generalInfo.isCollapse;
+  }
+}
 </script>
 
 <style scoped></style>

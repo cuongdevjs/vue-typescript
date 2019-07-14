@@ -4,7 +4,7 @@ import router from "./router/index";
 import store from "./store/index";
 
 import ElementUI from "element-ui";
-import '@/assets/index.scss'
+import "@/assets/index.scss";
 
 Vue.use(ElementUI);
 

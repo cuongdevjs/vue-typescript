@@ -9,20 +9,32 @@ export default new Router({
       {
         path: "/app",
         name: "app",
-        component: () => import("../App.vue")
+        component: () => import("../App.vue"),
+        children: concat(
+          [
+            {
+              path: "home",
+              component: () =>
+                import(/*webpackChunkName: "home" */ "../views/index.vue"),
+              name: "home"
+            }
+          ],
+          [
+            {
+              path: "/app/*",
+              redirect: {
+                name: "home"
+              }
+            }
+          ]
+        )
       }
-      // {
-      //   path: "/about",
-      //   name: "about",
-      //   component: () =>
-      //     import(/* webpackChunkName: "about" */ "./views/About.vue")
-      // }
     ],
     [
       {
         path: "*",
         redirect: {
-          name: "app"
+          name: "home"
         }
       }
     ]

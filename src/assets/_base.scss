@@ -1,0 +1,116 @@
+$fontRegular: "Open Sans";
+$colorBlue: #007aff;
+$colorBlueLight: #e1edfa;
+$colorRed: #e54d42;
+$colorRedLight: #f8e9e8;
+$colorYellow: #f0c330;
+$colorYellowLight: #f9f4e6;
+$colorGreen: #39ca74;
+$colorGreenLight: #e7f5ed;
+$colorSmoke: #abb4bd;
+$colorSilver: #abb4bd;
+$colorDark: #2d3e4f;
+$colorLight: hsla(240, 1%, 85%, 1);
+$colorBlack: #000;
+$colorWhite: #fff;
+$transitionEase: all 0.5s cubic-bezier(0.04, 1, 0.6, 0.97);
+$transitionRegular: all 0.15s ease-out;
+$fontSizeMedium: 14px;
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: $fontRegular;
+  padding: 0;
+  margin: 0;
+  font-size: $fontSizeMedium;
+}
+
+.style-fullWidth {
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  &__center {
+    align-items: center;
+    justify-content: center;
+  }
+  &__left {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__right {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__between {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__around {
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.flex-col {
+  display: flex;
+  &__center {
+    align-items: center;
+    justify-content: center;
+  }
+  &__left {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__right {
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__stretch {
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+
+.padding {
+  &__0 {
+    padding: 0;
+  }
+  &-left__0 {
+    padding-left: 0 !important;
+  }
+  &-right__0 {
+    padding-right: 0 !important;
+  }
+  &-bottom__0 {
+    padding-bottom: 0 !important;
+  }
+  &-top__0 {
+    padding-top: 0 !important;
+  }
+}
+
+.margin {
+  &__0 {
+    margin: 0;
+  }
+  &-left__0 {
+    margin-left: 0 !important;
+  }
+  &-right__0 {
+    margin-right: 0 !important;
+  }
+  &-bottom__0 {
+    margin-bottom: 0 !important;
+  }
+  &-top__0 {
+    margin-top: 0 !important;
+  }
+}

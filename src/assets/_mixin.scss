@@ -1,0 +1,10 @@
+/// transform center
+@mixin transformXY($x, $y) {
+  transfrom: translate($x, $y);
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+  flex: 0 0 auto;
+}

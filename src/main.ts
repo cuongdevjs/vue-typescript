@@ -1,12 +1,17 @@
 import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import AppMain from "./App-main.vue";
+import router from "./router/index";
+import store from "./store/index";
+
+import ElementUI from "element-ui";
+import '@/assets/index.scss'
+
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(AppMain)
 }).$mount("#app");

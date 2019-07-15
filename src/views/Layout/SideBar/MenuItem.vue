@@ -1,8 +1,10 @@
 <template>
   <el-menu
     default-active="2"
-    class="el-menu-vertical-demo"
+    :class="['menuWrapper', isCollapse ? 'collapse' : 'expand']"
     :collapse="isCollapse"
+    :collapse-transition="false"
+    mode="vertical"
   >
     <el-submenu index="1">
       <template slot="title">
@@ -42,4 +44,34 @@ export default class MenuItem extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.menuWrapper.expand {
+  transition: all 0.55s ease-out;
+  animation: expand 0.75s;
+  /* width: 240px; */
+}
+
+.menuWrapper.collapse {
+  width: 64px !important;
+  transition: all 0.55s ease-in;
+  animation: collapse 0.75s;
+}
+
+@keyframes collapse {
+  from {
+    width: 240px;
+  }
+  to {
+    width: 64px;
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 64px;
+  }
+  to {
+    width: 240px;
+  }
+}
+</style>

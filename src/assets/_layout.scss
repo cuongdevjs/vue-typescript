@@ -5,11 +5,6 @@
   .pSideBar {
     max-width: 280px;
     height: 100vh;
-    transition: 0.35s;
-  }
-
-  .pSideBar.has-minWidth {
-    min-width: 240px;
   }
 
   .pRight {
@@ -28,9 +23,11 @@
 
       .pHamburger.off {
         transform: rotate(0);
+        transition: all 0.55s ease-in;
       }
       .pHamburger.on {
         transform: rotate(-90deg);
+        transition: all 0.55s ease-out;
       }
 
       .avt {

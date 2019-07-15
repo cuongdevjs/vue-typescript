@@ -13,9 +13,14 @@ export default new Router({
         children: concat(
           [
             {
+              path: "about",
+              component: () => import("../views/About/index.vue"),
+              name: "about"
+            },
+            {
               path: "home",
               component: () =>
-                import(/*webpackChunkName: "home" */ "../views/index.vue"),
+                import(/*webpackChunkName: "home" */ "../views/Home/index.vue"),
               name: "home"
             }
           ],

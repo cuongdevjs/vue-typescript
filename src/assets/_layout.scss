@@ -48,28 +48,7 @@
       max-height: calc(100vh - 49px);
       max-width: 100%;
       @include size(100%, 100%);
-    }
-  }
-}
-
-.el-menu {
-  background-color: #304156;
-  max-height: 100vh;
-  height: 100%;
-  .el-submenu__title {
-    color: $colorSilver;
-    &:hover {
-      background-color: #263445;
-    }
-  }
-  .el-menu-item-group__title {
-    color: $colorSilver;
-  }
-  .el-menu-item {
-    color: $colorSilver;
-    &:hover,
-    &:focus {
-      background-color: #263445;
+      padding: 10px 24px;
     }
   }
 }

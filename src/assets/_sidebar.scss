@@ -2,3 +2,38 @@
   transition: 0s width ease-in-out, 0s padding-left ease-in-out,
     0s padding-right ease-in-out;
 }
+
+.pSideBar {
+  .menuWrapper.expand {
+    transition: all 0.55s ease-out;
+    animation: expand 0.75s;
+    width: 240px;
+    .el-menu .el-submenu__title {
+      transition-delay: 0.55s;
+    }
+  }
+
+  .menuWrapper.collapse {
+    width: 64px !important;
+    transition: all 0.55s ease-in;
+    animation: collapse 0.75s;
+  }
+
+  @keyframes collapse {
+    from {
+      width: 240px;
+    }
+    to {
+      width: 64px;
+    }
+  }
+
+  @keyframes expand {
+    from {
+      width: 64px;
+    }
+    to {
+      width: 240px;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import store from "./store/index";
 
 import ElementUI from "element-ui";
 import "@/assets/index.scss";
+import "@/register-hook";
 
 Vue.use(ElementUI);
 

@@ -1,6 +1,6 @@
 <template>
-  <transition name="el-fade-in-linear">
-    <el-breadcrumb separator-class="el-icon-arrow-right" class="bscrumb">
+  <el-breadcrumb separator-class="el-icon-arrow-right" class="bscrumb">
+    <transition-group name="el-fade-in-linear">
       <el-breadcrumb-item
         v-for="item in listBreadscrumb"
         :key="item.name"
@@ -8,8 +8,8 @@
       >
         {{ item.title }}
       </el-breadcrumb-item>
-    </el-breadcrumb>
-  </transition>
+    </transition-group>
+  </el-breadcrumb>
 </template>
 
 <script lang="ts">

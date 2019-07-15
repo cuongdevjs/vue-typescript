@@ -1,0 +1,22 @@
+.el-menu {
+  background-color: #304156;
+  max-height: 100vh;
+  height: 100%;
+  .el-submenu__title {
+    color: $colorSilver;
+    &:hover {
+      background-color: #263445;
+    }
+  }
+  .el-menu-item-group__title {
+    color: $colorSilver;
+    font-size: $fontSizeMedium;
+  }
+  .el-menu-item {
+    color: $colorSilver;
+    &:hover,
+    &:focus {
+      background-color: #263445;
+    }
+  }
+}

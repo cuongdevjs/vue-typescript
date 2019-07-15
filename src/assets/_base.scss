@@ -182,6 +182,17 @@ html {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 // the :export directive is the magic sauce for webpack
 // https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
 :export {

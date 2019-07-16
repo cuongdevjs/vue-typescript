@@ -19,7 +19,6 @@ export default class Home extends Vue {
 
   setListBreadscrumb() {
     generalInfo.SET_BREADSCRUMB(this.breadscrumb);
-    console.log("home");
   }
 
   created() {

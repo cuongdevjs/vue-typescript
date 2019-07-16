@@ -19,8 +19,6 @@ $menuHover: #263445;
 $subMenuBg: #1f2d3d;
 $subMenuHover: #001528;
 
-$sideBarWidth: 210px;
-
 $fontRegular: "Open Sans";
 $colorBlue: #007aff;
 $colorBlueLight: #e1edfa;
@@ -72,22 +70,27 @@ html {
 .flex-row {
   display: flex;
   &__center {
+    @extend .flex-row;
     align-items: center;
     justify-content: center;
   }
   &__left {
+    @extend .flex-row;
     align-items: center;
     justify-content: flex-start;
   }
   &__right {
+    @extend .flex-row;
     align-items: center;
     justify-content: flex-end;
   }
   &__between {
+    @extend .flex-row;
     align-items: center;
     justify-content: space-between;
   }
   &__around {
+    @extend .flex-row;
     align-items: center;
     justify-content: space-around;
   }
@@ -203,5 +206,4 @@ a {
   menuHover: $menuHover;
   subMenuBg: $subMenuBg;
   subMenuHover: $subMenuHover;
-  sideBarWidth: $sideBarWidth;
 }

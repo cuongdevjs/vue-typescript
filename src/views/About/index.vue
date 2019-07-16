@@ -22,7 +22,6 @@ export default class About extends Vue {
   ];
 
   setListBreadscrumb() {
-    console.log("about");
     generalInfo.SET_BREADSCRUMB(this.breadscrumb);
   }
 

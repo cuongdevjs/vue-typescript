@@ -1,5 +1,7 @@
 # vue-typescript
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CuongStf/vue-typescript.svg)](https://greenkeeper.io/)
+
 ## Project setup
 ```
 npm install
